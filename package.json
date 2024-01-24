@@ -1,0 +1,31 @@
+{
+    "name": "pokemon",
+    "private": true,
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "dev": "turbo run dev --parallel",
+      "lint": "turbo run lint",
+      "prettier": "turbo run prettier",
+      "format": "turbo run format"
+    },
+    "workspaces": {
+      "packages": [
+        "packages/*",
+        "App/*"
+      ],
+      "nohoist": [
+        "**/@adonisjs",
+        "**/@adonisjs/**",
+        "**/adonis*"
+      ]
+    },
+    "devDependencies": {
+      "@new-world/eslint-config": "*",
+      "turbo": "^1.10.7",
+      "turborepo": "^0.0.1",
+      "typescript": "^5.1.6"
+    }
+  }
+  
