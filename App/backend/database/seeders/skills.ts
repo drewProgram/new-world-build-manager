@@ -7,18 +7,18 @@ export default class extends BaseSeeder {
 
   public async run() {
     const skill = Skilldump.map(item => ({
-      // idh: `${item.idh}`,
-      // name: `${item.name}`,
-      // description: `${item.description}`,
-      // icon: `${item.icon}`,
-      // category: `${item.category}`,
-      // weapon: `${item.weapon}`,
-      // tree: `${item.tree}`,
-      // row: `${item.row}`,
-      // column: `${item.column}`,
-      // ultimate: item.ultimate,
-      // slottable: item.slottable,
-      // cooldown: `${item.cooldown}`,
+      idh: `${item.idh}`,
+      name: `${item.name}`,
+      description: `${item.description}`,
+      icon: `${item.icon}`,
+      category: `${item.category}`,
+      weapon: `${item.weapon}`,
+      tree: `${item.tree}`,
+      row: `${item.row}`,
+      column: `${item.column}`,
+      ultimate: item.ultimate,
+      slottable: item.slottable,
+      cooldown: `${item.cooldown}`,
       descriptionHtml: `${item.descriptionHtml}`
     }));
 
