@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <S.Wrapper>
         <Equipments />
-        <TabContainer />
+        <TabContainer tabOption="attributes" />
         <Stats />
       </S.Wrapper>
     </>

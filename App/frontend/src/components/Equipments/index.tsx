@@ -17,6 +17,10 @@ export default function Equipments() {
                     <Equipment />
                     <Equipment />
                     <Equipment />
+                    
+                    <Equipment />
+                    <Equipment />
+                    <Equipment />
             </S.Wrapper>
         </>
     );
