@@ -1,6 +1,6 @@
-import { ReactNode, useState } from 'react'
+import { ReactNode, useState } from 'react';
 
-import * as S from './styles'
+import * as S from './styles';
 
 export default function Layout({ children }: { children: ReactNode }) {
     return (
@@ -13,7 +13,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                 {children}
             </S.Main>
             <S.Footer>
-                Footer
+                <p>Created by Andrew</p>
             </S.Footer>
         </>
     )

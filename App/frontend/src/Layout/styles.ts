@@ -15,15 +15,26 @@ export const Header = styled.header`
 `;
 
 export const Main = styled.main`
-    max-width: 1200px;
-    margin-top: ${headerHeight}px;
-`;
-
-export const Footer = styled.footer`
+    max-width: 1400px;
+    min-height: calc(100vh - ${(headerHeight * 2) + (headerHeight / 2)}px); // 100vh - ((tamanho header + footer) + (tamanho da margin-bottom))
+    padding: 24px 8px;
+    margin: ${headerHeight}px auto ${headerHeight / 2}px auto;
+    @media screen and (max-width: 769px) {
+        padding: 24px;
+    }
 `;
 
 export const Title = styled.h1`
     font-size: 1.5em;
     text-align: center;
     color: white;
+`;
+
+export const Footer = styled.footer`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: ${headerHeight}px;
+    color: #fff;
+    background-color: #1E1E1E;
 `;

@@ -1,11 +1,18 @@
 import { useState } from 'react'
+import Equipments from '../../components/Equipments'
+import TabContainer from '../../components/TabContainer'
+import Stats from '../../components/Stats'
+
+import * as S from './styles'
 
 export default function Home() {
   return (
     <>
-      <div>
-        Home
-      </div>
+      <S.Wrapper>
+        <Equipments />
+        <TabContainer />
+        <Stats />
+      </S.Wrapper>
     </>
   )
 }
